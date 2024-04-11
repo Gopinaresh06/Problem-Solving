@@ -1,0 +1,19 @@
+// program to check if a number is prime or not
+
+function isPrime(num){
+// check if number is less than 2
+    if(num<2){
+        return `its is not a prime ${num}`
+    }
+// looping through 2
+    for( let i=2; i < num ; i++ ){
+    if(num%2 === 0){
+        return `its is not a prime ${num}`
+    }
+    }
+    return `its is a prime ${num}`
+}
+
+// take input from the user
+const number = parseInt(prompt("Enter a positive number: "));
+console.log(isPrime(number))
