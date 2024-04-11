@@ -1,0 +1,24 @@
+//Check if vowels in present in a string:
+// program to count the number of vowels in a string
+
+function countVowels (str){
+
+// defining vowels
+const vowels = "aeiouAEIOU";
+
+// initialize count
+let count = 0;
+// split and loop through string to test if each character is a vowel
+str.split('').forEach((char)=>{
+    if(vowels.includes(char)){
+        count++;
+    }
+})
+ // return number of vowels
+return count;
+}
+
+// take input
+var string = prompt(" enter the para : ");
+var result = countVowels(string)
+console.log(result);
