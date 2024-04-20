@@ -1,0 +1,29 @@
+Sort an array in javascript in Ascending order.
+// Get the input string
+let fruits = ["strawberry","apple","mango","banana"]
+//using sort methods 
+let result = fruits.sort();
+console.log(result)
+
+Sort an array in javascript in Descending order.
+// Get the input string
+let fruits = ["strawberry","apple","mango","banana"]
+//using sort and reverse methods
+let result = fruits.sort().reverse();
+console.log(result)
+
+Sort an array in javascript in Ascending order(Number).
+let number = [12,3,23,100,200,1000,8000];
+let result = number.sort(numSort);
+function numSort(a,b){
+    return a-b;
+}
+console.log(result)
+
+Sort an array in javascript in Descending order(Number).
+let number = [12,3,23,100,200,1000,8000];
+let result = number.sort(numSort);
+function numSort(a,b){
+    return b-a;
+}
+console.log(result)
