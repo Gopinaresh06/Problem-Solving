@@ -1,0 +1,4 @@
+Remove duplicate in given string :
+var str = "javascriptjavascriptjavascriptjavascriptjavascriptjavascript"
+let removeDuplicate = [...new Set(str)].join('')
+console.log(removeDuplicate)
