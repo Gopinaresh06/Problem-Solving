@@ -1,0 +1,5 @@
+// get input.
+var number = parseInt(prompt(" enter the number : "))
+// convert to string and get length.
+var result = number.toString().length
+console.log("total number of count is : " + result)
