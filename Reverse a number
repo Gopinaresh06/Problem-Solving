@@ -1,0 +1,10 @@
+// Get input.
+var input = prompt(" enter the number : ")
+// using ternary operator for when input is minus , it will execute.
+let minus = (input < 0 ) ? "-1":"1";
+// convert the input string to number.
+input= Math.abs(input)
+//convert to string , split , reverse and join .
+let result = input.toString().split("").reverse().join("")
+// output:
+console.log(result * minus)
