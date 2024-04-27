@@ -1,0 +1,18 @@
+// program to check an Armstrong number or not.
+function isArmstrong(number){
+    var strNum = number.toString();
+    var n = strNum.length;
+    var sum = 0;
+    for(let i = 0 ; i < n ; i++){
+        sum = sum+Math.pow(parseInt(strNum[i]),n)
+    }
+    if(number == sum){
+       return  `${number} is a armstrong.`
+    }else{
+       return `${number} is not armstrong.`
+    }
+    
+}
+//get input
+var number = parseInt(prompt(" enter the number : "));
+console.log(isArmstrong(number))
