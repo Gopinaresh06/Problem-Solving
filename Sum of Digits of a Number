@@ -1,0 +1,11 @@
+//get input
+var input = parseInt(prompt(" enter the numbers : "))
+// using forEach for iteration
+function sumOfDigit(){
+    let sum = 0;
+    input.toString().split("").forEach((digit)=>{
+        sum = sum + parseInt(digit)
+    })
+    return sum;
+}
+console.log(sumOfDigit())
